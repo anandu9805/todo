@@ -52,8 +52,8 @@ function App() {
             </div>
             <div >
               <button
-                className="border-black"
-                 style={{width:"100px",color:"red"}}
+                className="border-light-blue-900 border-2 p-2 rounded-md"
+                 style={{width:"100px"}}
                 onClick={() => {
                   updateList(() => {
                     return todolist.concat({
