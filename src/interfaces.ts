@@ -6,4 +6,5 @@ export  interface IParamTaskcard{
     id:number;
     task:string;
    
-    delete:(id:number)=>ITask[]}
+    delete:(id:number)=>ITask[]
+}

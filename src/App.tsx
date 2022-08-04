@@ -43,6 +43,7 @@ function App() {
           <div className=" flex flex-wrap">
             <div className="mr-20 mb-12">
               <Input
+              title="input_box"
                 style={{ width: "550px" }}
                 variant="outlined"
                 size="lg"
