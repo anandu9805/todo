@@ -11,10 +11,12 @@ import background from "./Assets/frontpage.png";
 let work: string;
 
 function App() {
+
   const [todolist, updateList] = useRecoilState(todoAtom);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     work = event.target.value;
+
   };
 
   return (
@@ -57,6 +59,7 @@ function App() {
                  style={{width:"100px"}}
                 onClick={() => {
                   updateList(() => {
+                    console.log("just checking");
                     return todolist.concat({
                       id: todolist.length + 1,
 
