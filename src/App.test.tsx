@@ -1,9 +1,12 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
-
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+import {RecoilRoot} from 'recoil'
+import { render, screen } from "@testing-library/react";
+import App from "./App";
+test("renders input box", () => {
+  render(<RecoilRoot>
+    <App/>
+    </RecoilRoot>);
+  const getelement = screen.getByTitle("input_box");
+  expect(getelement).toBeInTheDocument();
 });
+
